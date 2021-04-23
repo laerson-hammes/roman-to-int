@@ -10,7 +10,9 @@ def roman_to_int(roman):
       else:
          conversion = conversion + romans_values[f"{str.upper(letter)}"]
    return conversion
-          
+
 
 conversion = roman_to_int(list(roman := str(input("[+] ENTER THE DESIRED ROMAN NUMBER: "))))
 print(f"{str.upper(roman)} = {conversion}")
+
+# print(f"{roman_to_int(list(roman := str(input('[+] ENTER THE DESIRED ROMAN NUMBER: '))))} = {str.upper(roman)}")

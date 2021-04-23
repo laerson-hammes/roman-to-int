@@ -1,4 +1,4 @@
-def roman2int(roman):
+def roman_to_int(roman):
    romans_values = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
    conversion = 0
    for index, letter in enumerate(roman):
@@ -12,6 +12,5 @@ def roman2int(roman):
    return conversion
           
 
-roman = str(input("[+] ENTER THE DESIRED ROMAN NUMBER: "))
-conversion = roman2int(list(roman))
+conversion = roman_to_int(list(roman := str(input("[+] ENTER THE DESIRED ROMAN NUMBER: "))))
 print(f"{str.upper(roman)} = {conversion}")

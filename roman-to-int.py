@@ -4,11 +4,11 @@ def roman_to_int(roman):
    for index, letter in enumerate(roman):
       if index + 1 < len(roman):
          if romans_values[str.upper(roman[index + 1])] > romans_values[str.upper(letter)]:
-            conversion = conversion - romans_values[f"{str.upper(letter)}"]
+            conversion -= romans_values[f"{str.upper(letter)}"]
          else:
-            conversion = conversion + romans_values[f"{str.upper(letter)}"]
+            conversion += romans_values[f"{str.upper(letter)}"]
       else:
-         conversion = conversion + romans_values[f"{str.upper(letter)}"]
+         conversion += romans_values[f"{str.upper(letter)}"]
    return conversion
 
 
